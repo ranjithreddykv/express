@@ -1,8 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
-
+import "dotenv/config";
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.use(express.json());
 
 //sample in-memory database(arrays of users)
@@ -48,6 +48,6 @@ app.delete("/users/:id", (req, res) => {
   res.json({ message: "User Deleted Succesfully" });
 });
 
-app.listen(port,()=>{
+app.listen(port, () => {
   console.log(`server running on port number http://localhost:${port}`);
-})
+});
