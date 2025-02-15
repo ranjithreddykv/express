@@ -1,0 +1,13 @@
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"3.594\"}","timestamp":"2025-02-15T13:05:58.445Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.426\"}","timestamp":"2025-02-15T13:06:17.790Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.242\"}","timestamp":"2025-02-15T13:07:08.068Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/\",\"status\":\"404\",\"responseTime\":\"0.552\"}","timestamp":"2025-02-15T13:08:59.294Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users\",\"status\":\"200\",\"responseTime\":\"15.600\"}","timestamp":"2025-02-15T13:09:16.608Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users\",\"status\":\"200\",\"responseTime\":\"0.394\"}","timestamp":"2025-02-15T13:10:44.689Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user/:id\",\"status\":\"404\",\"responseTime\":\"1.163\"}","timestamp":"2025-02-15T13:11:57.129Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user/2\",\"status\":\"200\",\"responseTime\":\"0.221\"}","timestamp":"2025-02-15T13:12:05.121Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/user/create-user\",\"status\":\"404\",\"responseTime\":\"0.636\"}","timestamp":"2025-02-15T13:14:56.391Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/user/create-user\",\"status\":\"404\",\"responseTime\":\"0.114\"}","timestamp":"2025-02-15T13:15:03.260Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/user/create-user\",\"status\":\"201\",\"responseTime\":\"3.346\"}","timestamp":"2025-02-15T13:15:34.800Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"PUT\",\"url\":\"/users/1\",\"status\":\"200\",\"responseTime\":\"1.123\"}","timestamp":"2025-02-15T13:17:47.853Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"DELETE\",\"url\":\"/users/2\",\"status\":\"200\",\"responseTime\":\"0.720\"}","timestamp":"2025-02-15T13:18:54.585Z"}

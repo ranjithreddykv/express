@@ -1,15 +1,32 @@
 import express from "express";
 import bodyParser from "body-parser";
 import "dotenv/config";
+import logger from "./logger.js";
+import morgan from "morgan";
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
-
 //sample in-memory database(arrays of users)
 let users = [
   { id: 1, name: "Alice" },
   { id: 2, name: "Bob" },
 ];
+const morganFormat = ":method :url :status :response-time ms";
+app.use(
+  morgan(morganFormat, {
+    stream: {
+      write: (message) => {
+        const logObject = {
+          method: message.split(" ")[0],
+          url: message.split(" ")[1],
+          status: message.split(" ")[2],
+          responseTime: message.split(" ")[3],
+        };
+        logger.info(JSON.stringify(logObject));
+      },
+    },
+  })
+);
 
 //GET -retrieve all data
 app.get("/users", (req, res) => {
@@ -25,7 +42,7 @@ app.get("/user/:id", (req, res) => {
 });
 
 //POST -create a new user
-app.post("/users/create-user", (req, res) => {
+app.post("/user/create-user", (req, res) => {
   const { name } = req.body;
   if (!name) return res.status(400).json({ error: "Name is required" });
   const newUser = { id: users.length + 1, name };
